@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Para Rosaura 🎄💖</title>
+
+    <style>
+        body {
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            background: #ffeef4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff5b8a;
+            text-shadow: 2px 2px #ffc3d4;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #ff4d6d;
+            margin-top: 40px;
+            text-shadow: 1px 1px #ffc8d6;
+        }
+
+        .foto {
+            width: 70%;
+            max-width: 320px;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 0 15px rgba(255,0,100,0.3);
+            transition: 0.3s;
+            border: 4px solid #ff99bb;
+        }
+
+        .foto:hover {
+            transform: scale(1.08) rotate(1deg);
+        }
+
+        /* Stickers animados */
+        .sticker {
+            width: 90px;
+            position: absolute;
+            animation: float 3s infinite alternate;
+            z-index: 2;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(20px); }
+        }
+
+        /* Botón sorpresa */
+        button {
+            padding: 12px 25px;
+            background: #ff4d6d;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff2d55;
+        }
+
+        #mensaje {
+            margin-top: 25px;
+            font-size: 26px;
+            color: #ff2d55;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Stickers navideños -->
+    <img src="https://i.imgur.com/Si0QbQ6.png" class="sticker" style="top: 20px; left: 20px;">
+    <img src="https://i.imgur.com/2uQdFv2.png" class="sticker" style="top: 120px; right: 20px;">
+
+    <h1>🎄💖 Para Rosaura 💖🎄</h1>
+    <p style="font-size: 20px;">La crack del gym y la dueña del gatito más navideño 😸✨</p>
+
+    <!-- PORTADA -->
+    <img src="R3.jpg" class="foto">
+    
+
+    <!-- SECCIÓN GYM -->
+    <div class="section-title">🏋️‍♀️ Modo Gym Activado 💖🔥</div>
+
+    <img src="R1.jpg" class="foto">
+    <p>Entrenamiento nivel: **Leyenda del gym** 💪🔥</p>
+
+    <img src="R2.jpg" class="foto">
+    <p>Selfie deportiva: **aprobada con 100 puntos** 😎✨</p>
+
+    <img src="R5.jpg" class="foto">
+    <p>Cuando entrenás en casa porque no hay excusas 👑💖</p>
+
+
+    <!-- SECCIÓN GATITO -->
+    <div class="section-title">😸✨ Modo Gatito Navideño 🎄</div>
+
+    <img src="R4.jpg" class="foto">
+    <p>El verdadero modelo profesional de esta página 😼🎄✨</p>
+
+
+    <!-- BOTÓN SORPRESA -->
+    <button onclick="mostrarMensaje()">🎁 Haz clic si te atreves 🎁</button>
+
+    <div id="mensaje"></div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").innerHTML =
+                "💖✨ Ups… activaste el Modo Ternura + Gym ✨💖";
+        }
+    </script>
+
+    <!-- Mensaje final -->
+    <p style="margin-top: 50px; font-size: 20px; color: #ff4d6d;">
+        Gracias por existir y por aguantar mis ocurrencias 😂💖
+    </p>
+
+</body>
+</html>
